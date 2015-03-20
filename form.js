@@ -2,6 +2,7 @@
 $form.validate = function () {
   var requiredFields = $form.getRequiredFields();
 
+  // o !! é para forçar a reavaliação como booleana
   if ( !!requiredFields ) {
     for (var i = requiredFields.length - 1; i >= 0; i--) {
       var field = requiredFields[i];
